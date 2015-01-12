@@ -4,3 +4,40 @@ __________________________________*/
 
 /* =User Styles
 __________________________________*/
+
+.b-container {
+  border: 1px solid #ccc;
+  width: 748px;
+  margin-left: 14px;
+}
+
+.b-gallery {
+  margin: 10px;
+}
+
+.b-gallery__row {
+  margin: 10px -5px;
+  font-size: 0;
+}
+
+.b-gallery__item {
+  display: inline-block;
+  vertical-align: middle;
+  width: calc(25% - 10px);
+  box-sizing: border-box;
+  
+  margin-left: 5px;
+  margin-right: 5px;
+  
+  padding: 10px;
+  
+  border: 1px solid #ccc;
+  font-size: 0.8rem;
+}
+
+.b-gallery__item_40 { height: 60px; }
+.b-gallery__item_50 { height: 70px; }
+.b-gallery__item_60 { height: 80px; }
+.b-gallery__item_80 { height: 100px; }
+.b-gallery__item_90 { height: 110px; }
+.b-gallery__item_100 { height: 120px; }
