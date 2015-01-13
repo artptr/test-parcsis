@@ -4,3 +4,67 @@ __________________________________*/
 
 /* =User Styles
 __________________________________*/
+
+body {
+  min-width: 0;
+}
+
+.b-list {
+  display: table;
+  width: 100%;
+}
+
+.b-list__item {
+  box-sizing: border-box;
+  display: table-cell;
+  width: 33.33333%;
+  
+  padding: 10px;
+  border: 1px solid #999;
+  
+  vertical-align: top;
+}
+
+.b-list__item + .b-list__item {
+  border-left: none;
+}
+
+
+.b-entry {
+  position: relative;
+  overflow: hidden;
+}
+
+.b-entry__unit,
+.b-entry__price {
+  background-color: #fff;
+  z-index: 1;
+}
+
+.b-entry__unit {
+  position: relative;
+  padding-right: 0.4em;
+}
+
+.b-entry__price {
+  padding-left: 0.4em;
+}
+
+.b-entry__right {
+  float: right;
+}
+
+.b-entry__leader {
+  position: absolute;
+  float: left;
+  width: 100%;
+}
+  
+.b-entry__leader:after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  right: 100%;
+  height: 1.1em;
+  border-bottom: 1px dotted;
+}
