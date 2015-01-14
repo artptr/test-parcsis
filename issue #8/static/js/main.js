@@ -1,9 +1,7 @@
 $(function() {
-	$('.b-button').on('click', function() {
-		$.post('/login', {
-			login: $('.b-input[name="login"]').val(),
-			password: $('.b-input[name="password"]').val()
-		}, function() {
+	$('.b-form').on('submit', function(event) {
+        event.preventDefault();
+        $.post('/login', $(this).serialize(), function() {
 			alert('Авторизация прошла успешно!');
 		});
 	});
