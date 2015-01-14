@@ -4,3 +4,17 @@ __________________________________*/
 
 /* =User Styles
 __________________________________*/
+
+.b-square {
+  margin: 10px;
+  
+  position: relative;
+  padding-bottom: calc(100% - 20px);
+  overflow-y: auto;
+  
+  background-color: #ccc;
+}
+
+.b-square__content {
+  position: absolute;
+}

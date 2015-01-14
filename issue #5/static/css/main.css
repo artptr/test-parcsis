@@ -4,3 +4,37 @@ __________________________________*/
 
 /* =User Styles
 __________________________________*/
+
+.b-container {
+  position: relative;
+  width: 800px;
+}
+
+.b-container p {
+  margin: 1em 0;
+}
+
+.b-popup {
+  position: absolute;
+  z-index: 100;
+  
+  width: 100px;
+  height: 32px;
+  box-sizing: border-box;
+  
+  left: 50%;
+  top: 50%;
+  margin-left: -50px;
+  margin-top: -16px;
+  
+  border: 1px solid #999;
+  background-color: #fff;
+  
+  text-align: center;
+  line-height: 30px;
+}
+
+.b-blurred {
+  -webkit-filter: blur(5px);
+          filter: url(../fx/effects.svg#blur);
+}
