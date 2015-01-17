@@ -1,3 +1,67 @@
 .b-button {
-	
+  position: relative;
+  z-index: 1;
+  
+  margin: 5px 10px;
+  
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: middle;
+  height: 40px;
+  padding: 0 40px;
+  line-height: 40px;
+  
+  font-size: 14px;
+  color: #fff;
+  border: none;
+  border-radius: 24px;
+  
+  cursor: pointer;
+  
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+  
+  background: linear-gradient(#dadada, #e0e0e0);
+  transition: box-shadow 0.5s;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2), 0 1px 0 #aeaeae;
+}
+
+.b-button:hover,
+.b-button:focus {
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5), 0 1px 0 #aeaeae;
+}
+
+.b-button:before {
+  position: absolute;
+  content: '';
+  z-index: -2;
+  
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  left: 4px;
+  top: 4px;
+  
+  background: linear-gradient(#a0b348, #748c00);
+  border-radius: 20px;
+}
+
+.b-button:active:before {
+  background: linear-gradient(#748c00, #a0b348);
+}
+
+.b-button:after {
+  position: absolute;
+  content: '';
+  z-index: -1;
+  
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  left: 5px;
+  top: 5px;
+  
+  border-radius: 20px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 0 1px rgba(255, 255, 255, 0.5);
+}
+
+.b-button:active:after {
+  box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 0 1px rgba(255, 255, 255, 0.5);
 }
